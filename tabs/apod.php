@@ -26,10 +26,11 @@
 
 
                 if ($data['media_type'] == 'image')
-                    echo "
-            <img src='{$data['url']}'>
-            <p class='copy' >copyright: {$data['copyright']}</p>
-            ";
+                {
+                    echo "<img src='{$data['url']}'>";
+                    if(isset($data['copyright']))
+                        echo "<p class='copy' >copyright: {$data['copyright']}</p>";
+                }
                 else
                     echo "<a target='_blank' href='{$data['url']}' ><img src='./img/play_button.svg'>Watch video</a>";
 
