@@ -42,7 +42,7 @@ header{
 header h1{
     margin: 0;
     text-align: center;
-    font-family: fantasy;
+    font-family: fantasy, monospace;
     color: var(--text-primary)
 }
 main {
